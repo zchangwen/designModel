@@ -13,6 +13,10 @@
 		BE05C6B7212D663000C99AC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE05C6B6212D663000C99AC5 /* Assets.xcassets */; };
 		BE05C6BA212D663000C99AC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE05C6B8212D663000C99AC5 /* LaunchScreen.storyboard */; };
 		BE05C6BD212D663000C99AC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE05C6BC212D663000C99AC5 /* main.m */; };
+		BE05C6C6212D671C00C99AC5 /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = BE05C6C5212D671C00C99AC5 /* Singleton.m */; };
+		BE05C6CE212D6AA900C99AC5 /* Strategy_Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = BE05C6CD212D6AA900C99AC5 /* Strategy_Dog.m */; };
+		BE05C6D1212D6ABB00C99AC5 /* Strategy_Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = BE05C6D0212D6ABB00C99AC5 /* Strategy_Cat.m */; };
+		BE05C6D4212E4B4200C99AC5 /* PriceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BE05C6D3212E4B4200C99AC5 /* PriceTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,15 @@
 		BE05C6B9212D663000C99AC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE05C6BB212D663000C99AC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE05C6BC212D663000C99AC5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BE05C6C4212D671C00C99AC5 /* Singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		BE05C6C5212D671C00C99AC5 /* Singleton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Singleton.m; sourceTree = "<group>"; };
+		BE05C6C9212D69FC00C99AC5 /* StrategyProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StrategyProtocol.h; sourceTree = "<group>"; };
+		BE05C6CC212D6AA900C99AC5 /* Strategy_Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Strategy_Dog.h; sourceTree = "<group>"; };
+		BE05C6CD212D6AA900C99AC5 /* Strategy_Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Strategy_Dog.m; sourceTree = "<group>"; };
+		BE05C6CF212D6ABB00C99AC5 /* Strategy_Cat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Strategy_Cat.h; sourceTree = "<group>"; };
+		BE05C6D0212D6ABB00C99AC5 /* Strategy_Cat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Strategy_Cat.m; sourceTree = "<group>"; };
+		BE05C6D2212E4B4200C99AC5 /* PriceTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PriceTest.h; sourceTree = "<group>"; };
+		BE05C6D3212E4B4200C99AC5 /* PriceTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PriceTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +71,9 @@
 		BE05C6AC212D662E00C99AC5 /* DesignModel */ = {
 			isa = PBXGroup;
 			children = (
+				BE05C6C8212D693300C99AC5 /* Strategy-策略模式 */,
+				BE05C6C3212D670500C99AC5 /* Singleton-单例模式 */,
+				BE05C6C7212D680300C99AC5 /* Prototype-原型模式 */,
 				BE05C6AD212D662E00C99AC5 /* AppDelegate.h */,
 				BE05C6AE212D662E00C99AC5 /* AppDelegate.m */,
 				BE05C6B0212D662E00C99AC5 /* ViewController.h */,
@@ -69,6 +85,36 @@
 				BE05C6BC212D663000C99AC5 /* main.m */,
 			);
 			path = DesignModel;
+			sourceTree = "<group>";
+		};
+		BE05C6C3212D670500C99AC5 /* Singleton-单例模式 */ = {
+			isa = PBXGroup;
+			children = (
+				BE05C6C4212D671C00C99AC5 /* Singleton.h */,
+				BE05C6C5212D671C00C99AC5 /* Singleton.m */,
+			);
+			path = "Singleton-单例模式";
+			sourceTree = "<group>";
+		};
+		BE05C6C7212D680300C99AC5 /* Prototype-原型模式 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Prototype-原型模式";
+			sourceTree = "<group>";
+		};
+		BE05C6C8212D693300C99AC5 /* Strategy-策略模式 */ = {
+			isa = PBXGroup;
+			children = (
+				BE05C6C9212D69FC00C99AC5 /* StrategyProtocol.h */,
+				BE05C6CC212D6AA900C99AC5 /* Strategy_Dog.h */,
+				BE05C6CD212D6AA900C99AC5 /* Strategy_Dog.m */,
+				BE05C6CF212D6ABB00C99AC5 /* Strategy_Cat.h */,
+				BE05C6D0212D6ABB00C99AC5 /* Strategy_Cat.m */,
+				BE05C6D2212E4B4200C99AC5 /* PriceTest.h */,
+				BE05C6D3212E4B4200C99AC5 /* PriceTest.m */,
+			);
+			path = "Strategy-策略模式";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +187,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE05C6CE212D6AA900C99AC5 /* Strategy_Dog.m in Sources */,
 				BE05C6B2212D662E00C99AC5 /* ViewController.m in Sources */,
+				BE05C6C6212D671C00C99AC5 /* Singleton.m in Sources */,
 				BE05C6BD212D663000C99AC5 /* main.m in Sources */,
 				BE05C6AF212D662E00C99AC5 /* AppDelegate.m in Sources */,
+				BE05C6D1212D6ABB00C99AC5 /* Strategy_Cat.m in Sources */,
+				BE05C6D4212E4B4200C99AC5 /* PriceTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
