@@ -21,6 +21,10 @@
 		BE05C6DA212E52F200C99AC5 /* Company.m in Sources */ = {isa = PBXBuildFile; fileRef = BE05C6D9212E52F200C99AC5 /* Company.m */; };
 		BE05C6DD212E541500C99AC5 /* EmployeeDeepCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE05C6DC212E541500C99AC5 /* EmployeeDeepCopy.m */; };
 		BE05C6E0212E546700C99AC5 /* EmployeeShallowCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE05C6DF212E546700C99AC5 /* EmployeeShallowCopy.m */; };
+		BE05C6E4212E598000C99AC5 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = BE05C6E3212E598000C99AC5 /* Person.m */; };
+		BE05C6E7212E59F100C99AC5 /* Police.m in Sources */ = {isa = PBXBuildFile; fileRef = BE05C6E6212E59F100C99AC5 /* Police.m */; };
+		BE05C6EA212E5A0B00C99AC5 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = BE05C6E9212E5A0B00C99AC5 /* Student.m */; };
+		BE05C6EE212E5B6100C99AC5 /* Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = BE05C6ED212E5B6100C99AC5 /* Factory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +55,14 @@
 		BE05C6DC212E541500C99AC5 /* EmployeeDeepCopy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmployeeDeepCopy.m; sourceTree = "<group>"; };
 		BE05C6DE212E546700C99AC5 /* EmployeeShallowCopy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmployeeShallowCopy.h; sourceTree = "<group>"; };
 		BE05C6DF212E546700C99AC5 /* EmployeeShallowCopy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmployeeShallowCopy.m; sourceTree = "<group>"; };
+		BE05C6E2212E598000C99AC5 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		BE05C6E3212E598000C99AC5 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		BE05C6E5212E59F100C99AC5 /* Police.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Police.h; sourceTree = "<group>"; };
+		BE05C6E6212E59F100C99AC5 /* Police.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Police.m; sourceTree = "<group>"; };
+		BE05C6E8212E5A0B00C99AC5 /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		BE05C6E9212E5A0B00C99AC5 /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		BE05C6EC212E5B6100C99AC5 /* Factory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Factory.h; sourceTree = "<group>"; };
+		BE05C6ED212E5B6100C99AC5 /* Factory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Factory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +95,7 @@
 		BE05C6AC212D662E00C99AC5 /* DesignModel */ = {
 			isa = PBXGroup;
 			children = (
+				BE05C6E1212E596800C99AC5 /* AbstractFactory-抽象工厂 */,
 				BE05C6C8212D693300C99AC5 /* Strategy-策略模式 */,
 				BE05C6C3212D670500C99AC5 /* Singleton-单例模式 */,
 				BE05C6C7212D680300C99AC5 /* Prototype-原型模式 */,
@@ -135,6 +148,21 @@
 				BE05C6D3212E4B4200C99AC5 /* PriceTest.m */,
 			);
 			path = "Strategy-策略模式";
+			sourceTree = "<group>";
+		};
+		BE05C6E1212E596800C99AC5 /* AbstractFactory-抽象工厂 */ = {
+			isa = PBXGroup;
+			children = (
+				BE05C6E2212E598000C99AC5 /* Person.h */,
+				BE05C6E3212E598000C99AC5 /* Person.m */,
+				BE05C6E5212E59F100C99AC5 /* Police.h */,
+				BE05C6E6212E59F100C99AC5 /* Police.m */,
+				BE05C6E8212E5A0B00C99AC5 /* Student.h */,
+				BE05C6E9212E5A0B00C99AC5 /* Student.m */,
+				BE05C6EC212E5B6100C99AC5 /* Factory.h */,
+				BE05C6ED212E5B6100C99AC5 /* Factory.m */,
+			);
+			path = "AbstractFactory-抽象工厂";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,11 +239,15 @@
 				BE05C6B2212D662E00C99AC5 /* ViewController.m in Sources */,
 				BE05C6C6212D671C00C99AC5 /* Singleton.m in Sources */,
 				BE05C6BD212D663000C99AC5 /* main.m in Sources */,
+				BE05C6E7212E59F100C99AC5 /* Police.m in Sources */,
 				BE05C6AF212D662E00C99AC5 /* AppDelegate.m in Sources */,
 				BE05C6E0212E546700C99AC5 /* EmployeeShallowCopy.m in Sources */,
+				BE05C6E4212E598000C99AC5 /* Person.m in Sources */,
 				BE05C6D7212E52D500C99AC5 /* Employee.m in Sources */,
 				BE05C6DD212E541500C99AC5 /* EmployeeDeepCopy.m in Sources */,
+				BE05C6EE212E5B6100C99AC5 /* Factory.m in Sources */,
 				BE05C6D1212D6ABB00C99AC5 /* Strategy_Cat.m in Sources */,
+				BE05C6EA212E5A0B00C99AC5 /* Student.m in Sources */,
 				BE05C6DA212E52F200C99AC5 /* Company.m in Sources */,
 				BE05C6D4212E4B4200C99AC5 /* PriceTest.m in Sources */,
 			);

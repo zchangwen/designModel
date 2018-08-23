@@ -15,6 +15,8 @@
 #import "EmployeeDeepCopy.h"
 #import "EmployeeShallowCopy.h"
 
+#import "Factory.h"
+
 @interface ViewController ()
 
 @end
@@ -29,6 +31,8 @@
     [self createButtonWithIndex:1 withTitle:@"策略模式" withAction:@selector(strategyAction)];
     
     [self createButtonWithIndex:2 withTitle:@"原型模式" withAction:@selector(prototypeAction)];
+    
+    [self createButtonWithIndex:3 withTitle:@"抽象工厂模式" withAction:@selector(abstractFactoryAction)];
 }
 
 
@@ -63,6 +67,12 @@
     EmployeeDeepCopy *wangWu = [deep copy];
     alibaba.name = @"新阿里巴巴";
     NSLog(@"%@", wangWu.company.name);
+}
+
+- (void) abstractFactoryAction
+{
+    Factory *factory = [Factory new];
+    [factory getPerson:@"警察"];
 }
 
 #pragma mark
