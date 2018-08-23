@@ -17,6 +17,10 @@
 		BE05C6CE212D6AA900C99AC5 /* Strategy_Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = BE05C6CD212D6AA900C99AC5 /* Strategy_Dog.m */; };
 		BE05C6D1212D6ABB00C99AC5 /* Strategy_Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = BE05C6D0212D6ABB00C99AC5 /* Strategy_Cat.m */; };
 		BE05C6D4212E4B4200C99AC5 /* PriceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BE05C6D3212E4B4200C99AC5 /* PriceTest.m */; };
+		BE05C6D7212E52D500C99AC5 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = BE05C6D6212E52D500C99AC5 /* Employee.m */; };
+		BE05C6DA212E52F200C99AC5 /* Company.m in Sources */ = {isa = PBXBuildFile; fileRef = BE05C6D9212E52F200C99AC5 /* Company.m */; };
+		BE05C6DD212E541500C99AC5 /* EmployeeDeepCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE05C6DC212E541500C99AC5 /* EmployeeDeepCopy.m */; };
+		BE05C6E0212E546700C99AC5 /* EmployeeShallowCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE05C6DF212E546700C99AC5 /* EmployeeShallowCopy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +43,14 @@
 		BE05C6D0212D6ABB00C99AC5 /* Strategy_Cat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Strategy_Cat.m; sourceTree = "<group>"; };
 		BE05C6D2212E4B4200C99AC5 /* PriceTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PriceTest.h; sourceTree = "<group>"; };
 		BE05C6D3212E4B4200C99AC5 /* PriceTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PriceTest.m; sourceTree = "<group>"; };
+		BE05C6D5212E52D500C99AC5 /* Employee.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
+		BE05C6D6212E52D500C99AC5 /* Employee.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
+		BE05C6D8212E52F200C99AC5 /* Company.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Company.h; sourceTree = "<group>"; };
+		BE05C6D9212E52F200C99AC5 /* Company.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Company.m; sourceTree = "<group>"; };
+		BE05C6DB212E541500C99AC5 /* EmployeeDeepCopy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmployeeDeepCopy.h; sourceTree = "<group>"; };
+		BE05C6DC212E541500C99AC5 /* EmployeeDeepCopy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmployeeDeepCopy.m; sourceTree = "<group>"; };
+		BE05C6DE212E546700C99AC5 /* EmployeeShallowCopy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmployeeShallowCopy.h; sourceTree = "<group>"; };
+		BE05C6DF212E546700C99AC5 /* EmployeeShallowCopy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmployeeShallowCopy.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,14 @@
 		BE05C6C7212D680300C99AC5 /* Prototype-原型模式 */ = {
 			isa = PBXGroup;
 			children = (
+				BE05C6D5212E52D500C99AC5 /* Employee.h */,
+				BE05C6D6212E52D500C99AC5 /* Employee.m */,
+				BE05C6D8212E52F200C99AC5 /* Company.h */,
+				BE05C6D9212E52F200C99AC5 /* Company.m */,
+				BE05C6DB212E541500C99AC5 /* EmployeeDeepCopy.h */,
+				BE05C6DC212E541500C99AC5 /* EmployeeDeepCopy.m */,
+				BE05C6DE212E546700C99AC5 /* EmployeeShallowCopy.h */,
+				BE05C6DF212E546700C99AC5 /* EmployeeShallowCopy.m */,
 			);
 			path = "Prototype-原型模式";
 			sourceTree = "<group>";
@@ -192,7 +212,11 @@
 				BE05C6C6212D671C00C99AC5 /* Singleton.m in Sources */,
 				BE05C6BD212D663000C99AC5 /* main.m in Sources */,
 				BE05C6AF212D662E00C99AC5 /* AppDelegate.m in Sources */,
+				BE05C6E0212E546700C99AC5 /* EmployeeShallowCopy.m in Sources */,
+				BE05C6D7212E52D500C99AC5 /* Employee.m in Sources */,
+				BE05C6DD212E541500C99AC5 /* EmployeeDeepCopy.m in Sources */,
 				BE05C6D1212D6ABB00C99AC5 /* Strategy_Cat.m in Sources */,
+				BE05C6DA212E52F200C99AC5 /* Company.m in Sources */,
 				BE05C6D4212E4B4200C99AC5 /* PriceTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

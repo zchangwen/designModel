@@ -11,6 +11,10 @@
 #import "Singleton.h"
 #import "PriceTest.h"
 
+#import "Employee.h"
+#import "EmployeeDeepCopy.h"
+#import "EmployeeShallowCopy.h"
+
 @interface ViewController ()
 
 @end
@@ -23,6 +27,8 @@
     [self createButtonWithIndex:0 withTitle:@"单例模式" withAction:@selector(singletonAction)];
     
     [self createButtonWithIndex:1 withTitle:@"策略模式" withAction:@selector(strategyAction)];
+    
+    [self createButtonWithIndex:2 withTitle:@"原型模式" withAction:@selector(prototypeAction)];
 }
 
 
@@ -30,7 +36,7 @@
 - (void) singletonAction
 {
     Singleton *singleton = [Singleton sharedInstance];
-    NSLog(@"单例");
+    NSLog(@"单例 = %@",singleton);
 }
 
 - (void) strategyAction
@@ -38,6 +44,25 @@
     [PriceTest price:15];
     [PriceTest price:8];
     NSLog(@"策略");
+}
+
+- (void) prototypeAction
+{
+    Company *sina = [[Company alloc] initWithName:@"新浪" establishmentTime:@"2014-08-08" level:@"上市"];
+    Company *alibaba = [[Company alloc] initWithName:@"阿里巴巴" establishmentTime:@"2008-08-08" level:@"上市"];
+    
+    //深拷贝
+    EmployeeDeepCopy *deep = [[EmployeeDeepCopy alloc] initWithName:@"深拷贝" configWithAge:20 sex:@"女" company:alibaba];
+    
+    EmployeeShallowCopy *shallow = [[EmployeeShallowCopy alloc] initWithName:@"浅拷贝" configWithAge:20 sex:@"男" company:sina];
+    
+    EmployeeShallowCopy *liSi = [shallow copy];
+    sina.name = @"浪里个浪";
+    NSLog(@"%@", liSi.company.name);
+    
+    EmployeeDeepCopy *wangWu = [deep copy];
+    alibaba.name = @"新阿里巴巴";
+    NSLog(@"%@", wangWu.company.name);
 }
 
 #pragma mark
