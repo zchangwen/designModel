@@ -17,6 +17,10 @@
 
 #import "Factory.h"
 
+#import "FiveYuanNoSpicyBuild.h"
+#import "TenYuanAbnormalSpicyBuild.h"
+#import "Seller.h"
+
 @interface ViewController ()
 
 @end
@@ -33,6 +37,8 @@
     [self createButtonWithIndex:2 withTitle:@"原型模式" withAction:@selector(prototypeAction)];
     
     [self createButtonWithIndex:3 withTitle:@"抽象工厂模式" withAction:@selector(abstractFactoryAction)];
+    
+    [self createButtonWithIndex:4 withTitle:@"建造者模式" withAction:@selector(builderAction)];
 }
 
 
@@ -75,6 +81,19 @@
     [factory getPerson:@"警察"];
 }
 
+- (void) builderAction
+{
+    FiveYuanNoSpicyBuild *fiveBuilder = [[FiveYuanNoSpicyBuild alloc] init];
+    TenYuanAbnormalSpicyBuild *tenBuilder = [[TenYuanAbnormalSpicyBuild alloc] init];
+    
+    Seller *aSeller = [[Seller alloc] init];
+    
+    aSeller.handWheatCakeBuilder = fiveBuilder;
+    [aSeller cookFood];
+    
+    aSeller.handWheatCakeBuilder = tenBuilder;
+    [aSeller cookFood];
+}
 #pragma mark
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

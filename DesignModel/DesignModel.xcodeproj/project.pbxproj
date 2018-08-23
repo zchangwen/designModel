@@ -25,6 +25,9 @@
 		BE05C6E7212E59F100C99AC5 /* Police.m in Sources */ = {isa = PBXBuildFile; fileRef = BE05C6E6212E59F100C99AC5 /* Police.m */; };
 		BE05C6EA212E5A0B00C99AC5 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = BE05C6E9212E5A0B00C99AC5 /* Student.m */; };
 		BE05C6EE212E5B6100C99AC5 /* Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = BE05C6ED212E5B6100C99AC5 /* Factory.m */; };
+		BE05C6FB212E882800C99AC5 /* Seller.m in Sources */ = {isa = PBXBuildFile; fileRef = BE05C6F6212E882800C99AC5 /* Seller.m */; };
+		BE05C6FC212E882800C99AC5 /* FiveYuanNoSpicyBuild.m in Sources */ = {isa = PBXBuildFile; fileRef = BE05C6F7212E882800C99AC5 /* FiveYuanNoSpicyBuild.m */; };
+		BE05C6FD212E882800C99AC5 /* TenYuanAbnormalSpicyBuild.m in Sources */ = {isa = PBXBuildFile; fileRef = BE05C6F8212E882800C99AC5 /* TenYuanAbnormalSpicyBuild.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +66,13 @@
 		BE05C6E9212E5A0B00C99AC5 /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		BE05C6EC212E5B6100C99AC5 /* Factory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Factory.h; sourceTree = "<group>"; };
 		BE05C6ED212E5B6100C99AC5 /* Factory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Factory.m; sourceTree = "<group>"; };
+		BE05C6F4212E882800C99AC5 /* HandWheatCakeBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandWheatCakeBuilder.h; sourceTree = "<group>"; };
+		BE05C6F5212E882800C99AC5 /* TenYuanAbnormalSpicyBuild.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TenYuanAbnormalSpicyBuild.h; sourceTree = "<group>"; };
+		BE05C6F6212E882800C99AC5 /* Seller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Seller.m; sourceTree = "<group>"; };
+		BE05C6F7212E882800C99AC5 /* FiveYuanNoSpicyBuild.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiveYuanNoSpicyBuild.m; sourceTree = "<group>"; };
+		BE05C6F8212E882800C99AC5 /* TenYuanAbnormalSpicyBuild.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TenYuanAbnormalSpicyBuild.m; sourceTree = "<group>"; };
+		BE05C6F9212E882800C99AC5 /* FiveYuanNoSpicyBuild.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiveYuanNoSpicyBuild.h; sourceTree = "<group>"; };
+		BE05C6FA212E882800C99AC5 /* Seller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Seller.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +105,7 @@
 		BE05C6AC212D662E00C99AC5 /* DesignModel */ = {
 			isa = PBXGroup;
 			children = (
+				BE05C6EF212E7DDC00C99AC5 /* Builder-建造者模式 */,
 				BE05C6E1212E596800C99AC5 /* AbstractFactory-抽象工厂 */,
 				BE05C6C8212D693300C99AC5 /* Strategy-策略模式 */,
 				BE05C6C3212D670500C99AC5 /* Singleton-单例模式 */,
@@ -163,6 +174,20 @@
 				BE05C6ED212E5B6100C99AC5 /* Factory.m */,
 			);
 			path = "AbstractFactory-抽象工厂";
+			sourceTree = "<group>";
+		};
+		BE05C6EF212E7DDC00C99AC5 /* Builder-建造者模式 */ = {
+			isa = PBXGroup;
+			children = (
+				BE05C6F4212E882800C99AC5 /* HandWheatCakeBuilder.h */,
+				BE05C6F9212E882800C99AC5 /* FiveYuanNoSpicyBuild.h */,
+				BE05C6F7212E882800C99AC5 /* FiveYuanNoSpicyBuild.m */,
+				BE05C6F5212E882800C99AC5 /* TenYuanAbnormalSpicyBuild.h */,
+				BE05C6F8212E882800C99AC5 /* TenYuanAbnormalSpicyBuild.m */,
+				BE05C6FA212E882800C99AC5 /* Seller.h */,
+				BE05C6F6212E882800C99AC5 /* Seller.m */,
+			);
+			path = "Builder-建造者模式";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +261,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE05C6CE212D6AA900C99AC5 /* Strategy_Dog.m in Sources */,
+				BE05C6FC212E882800C99AC5 /* FiveYuanNoSpicyBuild.m in Sources */,
+				BE05C6FD212E882800C99AC5 /* TenYuanAbnormalSpicyBuild.m in Sources */,
 				BE05C6B2212D662E00C99AC5 /* ViewController.m in Sources */,
 				BE05C6C6212D671C00C99AC5 /* Singleton.m in Sources */,
 				BE05C6BD212D663000C99AC5 /* main.m in Sources */,
@@ -245,6 +272,7 @@
 				BE05C6E4212E598000C99AC5 /* Person.m in Sources */,
 				BE05C6D7212E52D500C99AC5 /* Employee.m in Sources */,
 				BE05C6DD212E541500C99AC5 /* EmployeeDeepCopy.m in Sources */,
+				BE05C6FB212E882800C99AC5 /* Seller.m in Sources */,
 				BE05C6EE212E5B6100C99AC5 /* Factory.m in Sources */,
 				BE05C6D1212D6ABB00C99AC5 /* Strategy_Cat.m in Sources */,
 				BE05C6EA212E5A0B00C99AC5 /* Student.m in Sources */,
