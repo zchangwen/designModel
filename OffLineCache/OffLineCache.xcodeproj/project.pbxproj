@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE24459721339401003AB884 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE24459621339401003AB884 /* AppDelegate.m */; };
+		BE24459A21339402003AB884 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE24459921339402003AB884 /* ViewController.m */; };
+		BE24459F21339403003AB884 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE24459E21339403003AB884 /* Assets.xcassets */; };
+		BE2445A221339403003AB884 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE2445A021339403003AB884 /* LaunchScreen.storyboard */; };
+		BE2445A521339403003AB884 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2445A421339403003AB884 /* main.m */; };
+		BE2445C1213396D6003AB884 /* HWIFileDownloadProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2445BE213396D6003AB884 /* HWIFileDownloadProgress.m */; };
+		BE2445C2213396D6003AB884 /* HWIFileDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2445BF213396D6003AB884 /* HWIFileDownloader.m */; };
+		BE2445C3213396D6003AB884 /* HWIFileDownloadItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2445C0213396D6003AB884 /* HWIFileDownloadItem.m */; };
+		BE2445C82133980A003AB884 /* DTDownloadStore.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2445C72133980A003AB884 /* DTDownloadStore.m */; };
+		BE2445CB2133987F003AB884 /* DTDownloadItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2445CA2133987F003AB884 /* DTDownloadItem.m */; };
+		BE2445CF213399DC003AB884 /* DTDownloadNotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2445CE213399DC003AB884 /* DTDownloadNotifications.m */; };
+		BE2446102133F383003AB884 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = BE24460E2133F383003AB884 /* NSString+MD5.m */; };
+		BE24461321340230003AB884 /* DTDownloadUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BE24461221340230003AB884 /* DTDownloadUtils.m */; };
+		BE6962A4213E6D9200E1E5E4 /* BaseWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6962A2213E6D9200E1E5E4 /* BaseWebViewController.m */; };
+		BE6962A7213E70B000E1E5E4 /* NSURLProtocolCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6962A6213E70B000E1E5E4 /* NSURLProtocolCustom.m */; };
+		BE6962AB213E71EC00E1E5E4 /* JKSandBoxManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6962A9213E71EC00E1E5E4 /* JKSandBoxManager.m */; };
+		E7C0E8E190C291A33C780952 /* libPods-OffLineCache.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D482B69718D9D44735AB1EF8 /* libPods-OffLineCache.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		457A9213777E257631D2576B /* Pods-OffLineCache.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OffLineCache.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OffLineCache/Pods-OffLineCache.debug.xcconfig"; sourceTree = "<group>"; };
+		45C50C8A006DD2D90A5008E7 /* Pods-OffLineCache.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OffLineCache.release.xcconfig"; path = "Pods/Target Support Files/Pods-OffLineCache/Pods-OffLineCache.release.xcconfig"; sourceTree = "<group>"; };
+		BE24459221339401003AB884 /* OffLineCache.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OffLineCache.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE24459521339401003AB884 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BE24459621339401003AB884 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BE24459821339401003AB884 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BE24459921339402003AB884 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BE24459E21339403003AB884 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE2445A121339403003AB884 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BE2445A321339403003AB884 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE2445A421339403003AB884 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BE2445B9213396D6003AB884 /* HWIFileDownloadProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWIFileDownloadProgress.h; sourceTree = "<group>"; };
+		BE2445BA213396D6003AB884 /* HWIFileDownloadDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWIFileDownloadDelegate.h; sourceTree = "<group>"; };
+		BE2445BB213396D6003AB884 /* HWIFileDownloadItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWIFileDownloadItem.h; sourceTree = "<group>"; };
+		BE2445BC213396D6003AB884 /* HWIFileDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWIFileDownloader.h; sourceTree = "<group>"; };
+		BE2445BD213396D6003AB884 /* HWIBackgroundSessionCompletionHandlerBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWIBackgroundSessionCompletionHandlerBlock.h; sourceTree = "<group>"; };
+		BE2445BE213396D6003AB884 /* HWIFileDownloadProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWIFileDownloadProgress.m; sourceTree = "<group>"; };
+		BE2445BF213396D6003AB884 /* HWIFileDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWIFileDownloader.m; sourceTree = "<group>"; };
+		BE2445C0213396D6003AB884 /* HWIFileDownloadItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWIFileDownloadItem.m; sourceTree = "<group>"; };
+		BE2445C62133980A003AB884 /* DTDownloadStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTDownloadStore.h; sourceTree = "<group>"; };
+		BE2445C72133980A003AB884 /* DTDownloadStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTDownloadStore.m; sourceTree = "<group>"; };
+		BE2445C92133987F003AB884 /* DTDownloadItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTDownloadItem.h; sourceTree = "<group>"; };
+		BE2445CA2133987F003AB884 /* DTDownloadItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTDownloadItem.m; sourceTree = "<group>"; };
+		BE2445CC21339935003AB884 /* DTDownloadItemStatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTDownloadItemStatus.h; sourceTree = "<group>"; };
+		BE2445CD213399DC003AB884 /* DTDownloadNotifications.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTDownloadNotifications.h; sourceTree = "<group>"; };
+		BE2445CE213399DC003AB884 /* DTDownloadNotifications.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTDownloadNotifications.m; sourceTree = "<group>"; };
+		BE24460E2133F383003AB884 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		BE24460F2133F383003AB884 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		BE24461121340230003AB884 /* DTDownloadUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTDownloadUtils.h; sourceTree = "<group>"; };
+		BE24461221340230003AB884 /* DTDownloadUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTDownloadUtils.m; sourceTree = "<group>"; };
+		BE6962A2213E6D9200E1E5E4 /* BaseWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseWebViewController.m; sourceTree = "<group>"; };
+		BE6962A3213E6D9200E1E5E4 /* BaseWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseWebViewController.h; sourceTree = "<group>"; };
+		BE6962A5213E70B000E1E5E4 /* NSURLProtocolCustom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSURLProtocolCustom.h; sourceTree = "<group>"; };
+		BE6962A6213E70B000E1E5E4 /* NSURLProtocolCustom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSURLProtocolCustom.m; sourceTree = "<group>"; };
+		BE6962A9213E71EC00E1E5E4 /* JKSandBoxManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKSandBoxManager.m; sourceTree = "<group>"; };
+		BE6962AA213E71EC00E1E5E4 /* JKSandBoxManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKSandBoxManager.h; sourceTree = "<group>"; };
+		D482B69718D9D44735AB1EF8 /* libPods-OffLineCache.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OffLineCache.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE24458F21339401003AB884 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7C0E8E190C291A33C780952 /* libPods-OffLineCache.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27FAF48A9B096899009CD1C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D482B69718D9D44735AB1EF8 /* libPods-OffLineCache.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E081AA7DBC27D65C78809DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				457A9213777E257631D2576B /* Pods-OffLineCache.debug.xcconfig */,
+				45C50C8A006DD2D90A5008E7 /* Pods-OffLineCache.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BE24458921339401003AB884 = {
+			isa = PBXGroup;
+			children = (
+				BE24459421339401003AB884 /* OffLineCache */,
+				BE24459321339401003AB884 /* Products */,
+				7E081AA7DBC27D65C78809DC /* Pods */,
+				27FAF48A9B096899009CD1C5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BE24459321339401003AB884 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE24459221339401003AB884 /* OffLineCache.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE24459421339401003AB884 /* OffLineCache */ = {
+			isa = PBXGroup;
+			children = (
+				BE6962A8213E71EC00E1E5E4 /* JKSandBoxManager */,
+				BE6962A1213E6D9200E1E5E4 /* ABWeb */,
+				BE2445B7213396D6003AB884 /* Lib */,
+				BE2445C4213396F2003AB884 /* ABUtils */,
+				BE24459521339401003AB884 /* AppDelegate.h */,
+				BE24459621339401003AB884 /* AppDelegate.m */,
+				BE24459821339401003AB884 /* ViewController.h */,
+				BE24459921339402003AB884 /* ViewController.m */,
+				BE24459E21339403003AB884 /* Assets.xcassets */,
+				BE2445A021339403003AB884 /* LaunchScreen.storyboard */,
+				BE2445A321339403003AB884 /* Info.plist */,
+				BE2445A421339403003AB884 /* main.m */,
+			);
+			path = OffLineCache;
+			sourceTree = "<group>";
+		};
+		BE2445B7213396D6003AB884 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				BE2445B8213396D6003AB884 /* DownLoad */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		BE2445B8213396D6003AB884 /* DownLoad */ = {
+			isa = PBXGroup;
+			children = (
+				BE2445B9213396D6003AB884 /* HWIFileDownloadProgress.h */,
+				BE2445BA213396D6003AB884 /* HWIFileDownloadDelegate.h */,
+				BE2445BB213396D6003AB884 /* HWIFileDownloadItem.h */,
+				BE2445BC213396D6003AB884 /* HWIFileDownloader.h */,
+				BE2445BD213396D6003AB884 /* HWIBackgroundSessionCompletionHandlerBlock.h */,
+				BE2445BE213396D6003AB884 /* HWIFileDownloadProgress.m */,
+				BE2445BF213396D6003AB884 /* HWIFileDownloader.m */,
+				BE2445C0213396D6003AB884 /* HWIFileDownloadItem.m */,
+			);
+			path = DownLoad;
+			sourceTree = "<group>";
+		};
+		BE2445C4213396F2003AB884 /* ABUtils */ = {
+			isa = PBXGroup;
+			children = (
+				BE24460F2133F383003AB884 /* NSString+MD5.h */,
+				BE24460E2133F383003AB884 /* NSString+MD5.m */,
+				BE2445C5213397F4003AB884 /* DownLoads */,
+			);
+			path = ABUtils;
+			sourceTree = "<group>";
+		};
+		BE2445C5213397F4003AB884 /* DownLoads */ = {
+			isa = PBXGroup;
+			children = (
+				BE2445C62133980A003AB884 /* DTDownloadStore.h */,
+				BE2445C72133980A003AB884 /* DTDownloadStore.m */,
+				BE2445C92133987F003AB884 /* DTDownloadItem.h */,
+				BE2445CA2133987F003AB884 /* DTDownloadItem.m */,
+				BE2445CC21339935003AB884 /* DTDownloadItemStatus.h */,
+				BE2445CD213399DC003AB884 /* DTDownloadNotifications.h */,
+				BE2445CE213399DC003AB884 /* DTDownloadNotifications.m */,
+				BE24461121340230003AB884 /* DTDownloadUtils.h */,
+				BE24461221340230003AB884 /* DTDownloadUtils.m */,
+			);
+			path = DownLoads;
+			sourceTree = "<group>";
+		};
+		BE6962A1213E6D9200E1E5E4 /* ABWeb */ = {
+			isa = PBXGroup;
+			children = (
+				BE6962A3213E6D9200E1E5E4 /* BaseWebViewController.h */,
+				BE6962A2213E6D9200E1E5E4 /* BaseWebViewController.m */,
+				BE6962A5213E70B000E1E5E4 /* NSURLProtocolCustom.h */,
+				BE6962A6213E70B000E1E5E4 /* NSURLProtocolCustom.m */,
+			);
+			path = ABWeb;
+			sourceTree = "<group>";
+		};
+		BE6962A8213E71EC00E1E5E4 /* JKSandBoxManager */ = {
+			isa = PBXGroup;
+			children = (
+				BE6962A9213E71EC00E1E5E4 /* JKSandBoxManager.m */,
+				BE6962AA213E71EC00E1E5E4 /* JKSandBoxManager.h */,
+			);
+			path = JKSandBoxManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE24459121339401003AB884 /* OffLineCache */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE2445A821339403003AB884 /* Build configuration list for PBXNativeTarget "OffLineCache" */;
+			buildPhases = (
+				16D3E22F86D663646758996C /* [CP] Check Pods Manifest.lock */,
+				BE24458E21339401003AB884 /* Sources */,
+				BE24458F21339401003AB884 /* Frameworks */,
+				BE24459021339401003AB884 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OffLineCache;
+			productName = OffLineCache;
+			productReference = BE24459221339401003AB884 /* OffLineCache.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE24458A21339401003AB884 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = zchangwen;
+				TargetAttributes = {
+					BE24459121339401003AB884 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = BE24458D21339401003AB884 /* Build configuration list for PBXProject "OffLineCache" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE24458921339401003AB884;
+			productRefGroup = BE24459321339401003AB884 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE24459121339401003AB884 /* OffLineCache */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE24459021339401003AB884 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE2445A221339403003AB884 /* LaunchScreen.storyboard in Resources */,
+				BE24459F21339403003AB884 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16D3E22F86D663646758996C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OffLineCache-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE24458E21339401003AB884 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE2445CF213399DC003AB884 /* DTDownloadNotifications.m in Sources */,
+				BE6962A7213E70B000E1E5E4 /* NSURLProtocolCustom.m in Sources */,
+				BE6962AB213E71EC00E1E5E4 /* JKSandBoxManager.m in Sources */,
+				BE2445C82133980A003AB884 /* DTDownloadStore.m in Sources */,
+				BE2446102133F383003AB884 /* NSString+MD5.m in Sources */,
+				BE24459A21339402003AB884 /* ViewController.m in Sources */,
+				BE2445CB2133987F003AB884 /* DTDownloadItem.m in Sources */,
+				BE2445C1213396D6003AB884 /* HWIFileDownloadProgress.m in Sources */,
+				BE2445A521339403003AB884 /* main.m in Sources */,
+				BE2445C3213396D6003AB884 /* HWIFileDownloadItem.m in Sources */,
+				BE2445C2213396D6003AB884 /* HWIFileDownloader.m in Sources */,
+				BE24461321340230003AB884 /* DTDownloadUtils.m in Sources */,
+				BE6962A4213E6D9200E1E5E4 /* BaseWebViewController.m in Sources */,
+				BE24459721339401003AB884 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BE2445A021339403003AB884 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE2445A121339403003AB884 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE2445A621339403003AB884 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BE2445A721339403003AB884 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE2445A921339403003AB884 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 457A9213777E257631D2576B /* Pods-OffLineCache.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T69UTGP6LQ;
+				INFOPLIST_FILE = OffLineCache/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.freedom.OffLineCache;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE2445AA21339403003AB884 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45C50C8A006DD2D90A5008E7 /* Pods-OffLineCache.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T69UTGP6LQ;
+				INFOPLIST_FILE = OffLineCache/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.freedom.OffLineCache;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE24458D21339401003AB884 /* Build configuration list for PBXProject "OffLineCache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE2445A621339403003AB884 /* Debug */,
+				BE2445A721339403003AB884 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE2445A821339403003AB884 /* Build configuration list for PBXNativeTarget "OffLineCache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE2445A921339403003AB884 /* Debug */,
+				BE2445AA21339403003AB884 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE24458A21339401003AB884 /* Project object */;
+}

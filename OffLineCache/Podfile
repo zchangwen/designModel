@@ -1,0 +1,8 @@
+platform :ios, '8.0'
+
+target 'OffLineCache' do
+
+pod 'SSZipArchive'
+pod 'AFNetworking'
+
+end
